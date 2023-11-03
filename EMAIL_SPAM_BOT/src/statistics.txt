@@ -1,0 +1,9 @@
+----------------------------------
+Total Emails Sent: 26
+Successful Emails: 26
+Failed Emails: 0
+Success Rate: 100.00%
+Average Time Taken: 3.13 seconds
+Earliest Sent Email: Email number 2
+Latest Sent Email: Email number 8
+----------------------------------

@@ -1,0 +1,10 @@
+----------------------------------
+Total Emails Sent: 229
+Successful Emails: 229
+Failed Emails: 0
+Success Rate: 100.00%
+Average Time Taken: 0.79 seconds
+Fastest Email Sent: To: ondra.losi2@gmail.com
+Slowest Email Sent: To: ondra.losi2@gmail.com
+Total Time Taken: 169.88 seconds
+----------------------------------

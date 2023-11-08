@@ -66,7 +66,7 @@ def generate_report(log_file):
     report += f"Average Time Taken: {avg_time:.2f} seconds\n"
     report += f"Fastest Email Sent: {fastest_email}\n"
     report += f"Slowest Email Sent: {slowest_email}\n"
-    report += f"Total Time Taken: {total_time:.2f} seconds\n"
+    report += f"Total Time Taken: {total_time:.2f} min\n"
     report += "----------------------------------\n"
 
     return report

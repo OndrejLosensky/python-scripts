@@ -61,6 +61,7 @@ def spam_emails(sender_email, app_password, subject, message, total_emails, num_
                 log_message = f"To: {recipient_email} | Status: {status} | send In: {time_it_took:.2f} s | {date_formatted}"
                 log_messages.append(log_message)
                 print(log_message)
+                print(f"Další email bude odeslán za: {batch_pause_seconds} s")
             time.sleep(batch_pause_seconds)
 
     # Close the SMTP connection
@@ -79,9 +80,9 @@ def main():
     app_password = 'rhrp ogho cthw iqig'  # Google App password for your account
     subject = 'Email marketing test'
     message = 'This email was sent by email-spam-bot script'
-    total_emails = 40
-    num_emails_per_batch = 20  # Change the number of emails to send in each batch
-    batch_pause_seconds = 10  # Change the pause duration between batches (e.g., 5 minutes)
+    total_emails = 150
+    num_emails_per_batch = 5  # Change the number of emails to send in each batch
+    batch_pause_seconds = 15  # Change the pause duration between batches (e.g., 5 minutes)
 
     log_file = "src/log.txt"
     log_messages = spam_emails(sender_email, app_password, subject, message, total_emails ,num_emails_per_batch, batch_pause_seconds)

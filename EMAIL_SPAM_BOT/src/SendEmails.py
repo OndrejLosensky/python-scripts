@@ -39,7 +39,7 @@ def get_formatted_date_time():
 
 def spam_emails(sender_email, app_password, subject, message, total_emails, num_emails_per_batch, batch_pause_seconds):
     # Read recipient emails from an Excel file
-    recipient_emails = pd.read_excel('src/Emails/spam_emails.xlsx')['Email'].tolist()
+    recipient_emails = pd.read_csv('src/Emails/spam_emails.csv')['Email'].tolist()
 
     # Establish the SMTP connection
     server = establish_smtp_connection(sender_email, app_password)
@@ -80,9 +80,9 @@ def main():
     app_password = 'rhrp ogho cthw iqig'  # Google App password for your account
     subject = 'Email marketing test'
     message = 'This email was sent by email-spam-bot script'
-    total_emails = 150
-    num_emails_per_batch = 5  # Change the number of emails to send in each batch
-    batch_pause_seconds = 15  # Change the pause duration between batches (e.g., 5 minutes)
+    total_emails = 500
+    num_emails_per_batch =25  # Change the number of emails to send in each batch
+    batch_pause_seconds = 20  # Change the pause duration between batches (e.g., 5 minutes)
 
     log_file = "src/log.txt"
     log_messages = spam_emails(sender_email, app_password, subject, message, total_emails ,num_emails_per_batch, batch_pause_seconds)

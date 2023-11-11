@@ -3,7 +3,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-def send_confirm_email( marked_emails):
+def send_confirm_email():
     # Date
     date = datetime.now()
     date_formated = date.strftime('%Y-%m-%d %H:%M:%S')    

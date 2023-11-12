@@ -1,0 +1,4 @@
+user: "" # Add your email address
+password: "" # Add your Google App password
+
+# You will need this for accessing the email address, for sending the confirmation email, you will use the same data but now they are in the function 

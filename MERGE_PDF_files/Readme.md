@@ -4,10 +4,9 @@
 <p> Its very simple because it just uses imported library to do this. </p>
 
 <div>
-    *Install the library by pasting this into the terminal*
+    <h4> Install by copying this into your terminal: </h4>
 
 ```bash
   pip install PyPDF2
 ```
-
 </div>
